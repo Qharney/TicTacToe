@@ -9,15 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *LabelOne;
-@property (strong, nonatomic) IBOutlet UILabel *LabelTwo;
-@property (strong, nonatomic) IBOutlet UILabel *LabelThree;
-@property (strong, nonatomic) IBOutlet UILabel *LabelFour;
-@property (strong, nonatomic) IBOutlet UILabel *LabelFive;
-@property (strong, nonatomic) IBOutlet UILabel *LabelSix;
-@property (strong, nonatomic) IBOutlet UILabel *LabelSeven;
-@property (strong, nonatomic) IBOutlet UILabel *LabelEight;
-@property (strong, nonatomic) IBOutlet UILabel *LabelNine;
+@property (strong, nonatomic) IBOutlet UILabel *labelOne;
+@property (strong, nonatomic) IBOutlet UILabel *labelTwo;
+@property (strong, nonatomic) IBOutlet UILabel *labelThree;
+@property (strong, nonatomic) IBOutlet UILabel *labelFour;
+@property (strong, nonatomic) IBOutlet UILabel *labelFive;
+@property (strong, nonatomic) IBOutlet UILabel *labelSix;
+@property (strong, nonatomic) IBOutlet UILabel *labelSeven;
+@property (strong, nonatomic) IBOutlet UILabel *labelEight;
+@property (strong, nonatomic) IBOutlet UILabel *labelNine;
+@property (strong, nonatomic) IBOutlet UILabel *whichPlayerLabel;
+
+-(NSString *)whoWon;
 
 
 @end

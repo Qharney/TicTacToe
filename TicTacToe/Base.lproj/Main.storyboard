@@ -70,22 +70,38 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mc-Zo-Fpg">
+                                <rect key="frame" x="0.0" y="377" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qKJ-rY-Eb9" appends="YES" id="dnk-ga-lUk"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="LabelEight" destination="wgZ-pI-Wtw" id="n6I-xJ-QHl"/>
-                        <outlet property="LabelFive" destination="Zaa-Ss-JrM" id="ohQ-Hg-Chh"/>
-                        <outlet property="LabelFour" destination="PXv-l7-JQJ" id="4pR-je-NPG"/>
-                        <outlet property="LabelNine" destination="gaB-Pj-RKX" id="sjI-e4-x8A"/>
-                        <outlet property="LabelOne" destination="srC-cB-epp" id="QOs-8R-LvO"/>
-                        <outlet property="LabelSeven" destination="vhd-4H-ucD" id="uEI-Gj-OKF"/>
-                        <outlet property="LabelSix" destination="pvB-R0-l49" id="Mp5-QP-OmR"/>
-                        <outlet property="LabelThree" destination="dTo-gL-ZLh" id="FQe-Jv-4U9"/>
-                        <outlet property="LabelTwo" destination="jon-cJ-3jb" id="Y8M-md-Fia"/>
+                        <outlet property="labelEight" destination="wgZ-pI-Wtw" id="mg6-8K-kKX"/>
+                        <outlet property="labelFive" destination="Zaa-Ss-JrM" id="mrR-hj-PUS"/>
+                        <outlet property="labelFour" destination="PXv-l7-JQJ" id="ypb-0m-qKh"/>
+                        <outlet property="labelNine" destination="gaB-Pj-RKX" id="d1a-TX-BIZ"/>
+                        <outlet property="labelOne" destination="srC-cB-epp" id="k0g-Fx-FJb"/>
+                        <outlet property="labelSeven" destination="vhd-4H-ucD" id="JKr-c7-2ze"/>
+                        <outlet property="labelSix" destination="pvB-R0-l49" id="AVb-3A-n7A"/>
+                        <outlet property="labelThree" destination="dTo-gL-ZLh" id="8is-D7-gVL"/>
+                        <outlet property="labelTwo" destination="jon-cJ-3jb" id="cqy-Gk-8px"/>
+                        <outlet property="whichPlayerLabel" destination="6mc-Zo-Fpg" id="EDP-Cb-agX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qKJ-rY-Eb9">
+                    <connections>
+                        <action selector="onLabelTapped:" destination="vXZ-lx-hvc" id="ndn-L3-rFG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="129" y="320"/>
         </scene>
